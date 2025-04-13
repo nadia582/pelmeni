@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сервіс доставки домашніх пельменів у Харкові – швидко, смачно, з любов’ю.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пельменна Хата – Доставка пельменів у Харкові</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #fffaf6;
+            color: #333;
+        }
+
+        header nav {
+            background-color: #f7c6c7;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .carousel img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .menu-card {
+            background-color: #fff1f1;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 200px;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 1rem auto;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #ffb3b3;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff9999;
+        }
+
+        @media (max-width: 768px) {
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .carousel img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Пельменна Хата</h1>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="carousel">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Gm96OoyvDUfDHTveFSkp6q35/user-D4T7FAH4GbiCNFD6H7s4ybP6/img-n0uGFyMQqLgkj8bu.png?st=2024-04-13T14%3A45%3A00Z&se=2025-04-13T14%3A45%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=REPLACE_THIS" alt="Пельмені 1">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Gm96OoyvDUfDHTveFSkp6q35/user-D4T7FAH4GbiCNFD6H7s4ybP6/img-n0uGFyMQqLgkj8bu.png?st=2024-04-13T14%3A45%3A00Z&se=2025-04-13T14%3A45%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=REPLACE_THIS" alt="Пельмені 2">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Gm96OoyvDUfDHTveFSkp6q35/user-D4T7FAH4GbiCNFD6H7s4ybP6/img-n0uGFyMQqLgkj8bu.png?st=2024-04-13T14%3A45%3A00Z&se=2025-04-13T14%3A45%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=REPLACE_THIS" alt="Пельмені 3">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Gm96OoyvDUfDHTveFSkp6q35/user-D4T7FAH4GbiCNFD6H7s4ybP6/img-n0uGFyMQqLgkj8bu.png?st=2024-04-13T14%3A45%3A00Z&se=2025-04-13T14%3A45%3A00Z&sp=r&sv=2021-08-06&sr=b&sig=REPLACE_THIS" alt="Пельмені 4">
+        </div>
+        <h2>Ласкаво просимо до Пельменної Хати!</h2>
+        <p>Справжні домашні пельмені з доставкою по Харкову.</p>
+    </section>
+
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Наша історія почалася з любові до традиційної української кухні. Ми готуємо пельмені з найсвіжіших інгредієнтів і доставляємо їх прямо до вас додому.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <div class="menu-card">
+                <h3>Пельмені класичні</h3>
+                <p>500 г – 120 грн</p>
+            </div>
+            <div class="menu-card">
+                <h3>Пельмені з грибами</h3>
+                <p>500 г – 135 грн</p>
+            </div>
+            <div class="menu-card">
+                <h3>Пельмені з сиром</h3>
+                <p>500 г – 130 грн</p>
+            </div>
+            <div class="menu-card">
+                <h3>Пельмені з креветками</h3>
+                <p>500 г – 160 грн</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Адреса: вул. Сумська, 1, Харків<br>Телефон: +38 (050) 123-45-67</p>
+        <form>
+            <input type="text" placeholder="Ваше ім’я" required>
+            <input type="tel" placeholder="Телефон" required>
+            <textarea placeholder="Ваш коментар..."></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Пельменна Хата. Усі права захищено.</p>
+    </footer>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Дякуємо! Ми скоро з вами зв'яжемося.");
+        });
+    </script>
+</body>
+</html>
